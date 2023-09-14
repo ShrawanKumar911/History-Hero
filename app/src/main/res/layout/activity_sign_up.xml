@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/turquoiseGreen"
     tools:context=".SignUp">
 
     <androidx.cardview.widget.CardView
@@ -11,6 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:background="@drawable/custom_login"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
         app:cardCornerRadius="20dp">
 
         <LinearLayout
@@ -18,7 +21,17 @@
             android:layout_height="wrap_content"
             android:padding="24dp"
             android:layout_gravity="center"
+            android:gravity="center"
             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SignUp"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:layout_marginBottom="20dp"></TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,26 +40,75 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:layout_width="140dp"
-                    android:layout_height="30dp"
+                    android:id="@+id/first"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
                     android:hint="First Name"
-                    android:padding="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/custom_login"></EditText>
+
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/last"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:hint="Last Name"
+                android:background="@drawable/custom_login"></EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:hint="Age"
+                    android:padding="10dp"
                     android:background="@drawable/custom_login"></EditText>
 
                 <EditText
+                    android:id="@+id/gender"
                     android:layout_width="match_parent"
                     android:layout_marginLeft="20dp"
-                    android:layout_height="30dp"
-                    android:padding="5dp"
-                    android:hint="Last Name"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:hint="Gender"
                     android:background="@drawable/custom_login"></EditText>
             </LinearLayout>
             <EditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
-                android:layout_marginTop="10"
-                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
                 android:hint="Enter Email"
-                android:background="@drawable/custom_login"
+                android:padding="10dp"
+                android:background="@drawable/custom_login"></EditText>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:hint="Enter Password"
+                android:padding="10dp"
+                android:background="@drawable/custom_login"></EditText>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bio_button"
+                android:text="Submit"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"></Button>
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

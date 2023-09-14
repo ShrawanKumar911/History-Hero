@@ -30,6 +30,11 @@ class MainActivity : AppCompatActivity() {
         signup = findViewById(R.id.signup)
         sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
         auth = FirebaseAuth.getInstance()
+        if (sharedPreferences.getBoolean("isLoggedIn", false)) {
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         log.setOnClickListener(){
             val username = user.text.toString()
