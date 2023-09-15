@@ -15,16 +15,22 @@
         android:theme="@style/Theme.HistoryHero"
         tools:targetApi="31">
         <activity
-            android:name=".century_1100"
+            android:name=".Century1100"
             android:exported="false" />
         <activity
-            android:name=".SignUp"
+            android:name=".Century_1100"
             android:exported="false" />
         <activity
             android:name=".StoYear"
             android:exported="false" />
         <activity
-            android:name=".BioYear"
+            android:name=".C_1100_1"
+            android:exported="false" />
+        <activity
+            android:name=".century_1100"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
             android:exported="false" />
         <activity
             android:name=".Home"

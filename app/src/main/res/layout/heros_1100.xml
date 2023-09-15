@@ -41,6 +41,7 @@
                 android:textSize="15dp"></TextView>
         </LinearLayout>
         <ImageView
+            android:id="@+id/enter"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/baseline_arrow_circle_right_24"></ImageView>

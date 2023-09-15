@@ -6,20 +6,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Home"
-    android:background="@color/Parchment">
+    android:background="@color/purple">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/purple">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome To"
-        android:layout_marginTop="20dp"
+        android:text="Hi Welcome To"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:textStyle="italic"
-        android:textSize="30sp"></TextView>
+        android:textSize="15sp"></TextView>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -29,13 +30,13 @@
                 android:id="@+id/back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="130dp"
+                android:layout_marginLeft="199dp"
                 android:background="@drawable/baseline_logout_24"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Logout"
-                android:layout_marginLeft="125dp"
+                android:layout_marginLeft="191dp"
                 android:textStyle="bold"></TextView>
         </LinearLayout>
     </LinearLayout>
@@ -43,57 +44,69 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HISTORY HERO"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginLeft="20dp"></TextView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_login"
-        app:cardBackgroundColor="@color/platinum"
-        app:cardCornerRadius="20dp">
+        app:cardBackgroundColor="@color/lavendar">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="616dp"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="186dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/home_history"></ImageView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="633dp"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/biography"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/bio_button"
-                android:shadowColor="@color/blue"
-                android:text="Biography"
-                android:textSize="30dp"></Button>
+                <ImageView
+                    android:layout_width="169dp"
+                    android:layout_height="168dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/home_history"></ImageView>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="186dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/home_story"></ImageView>
+                <Button
+                    android:id="@+id/biography"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/bio_button"
+                    android:shadowColor="@color/blue"
+                    android:text="Biography"
+                    android:textSize="20dp"></Button>
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="162dp"
+            android:layout_height="168dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/home_story"></ImageView>
 
             <Button
                 android:id="@+id/story"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/bio_button"
                 android:shadowColor="@color/blue"
                 android:text="Story"
-                android:textSize="30dp"></Button>
+                android:textSize="20dp"></Button>
+        </LinearLayout>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
