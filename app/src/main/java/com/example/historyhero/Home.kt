@@ -1,19 +1,18 @@
 package com.example.historyhero
 
-import BioYear
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import com.google.firebase.auth.FirebaseAuth
 
 class Home : AppCompatActivity() {
-    private lateinit var bio:Button
-    private lateinit var sto:Button
+    private lateinit var bio:CardView
+    private lateinit var sto:CardView
     private lateinit var logout: TextView
     private lateinit var sharedPreferences: SharedPreferences
     private lateinit var auth: FirebaseAuth
@@ -40,7 +39,7 @@ class Home : AppCompatActivity() {
         }
 
         bio.setOnClickListener(){
-            val intent = Intent(this,BioYear::class.java)
+            val intent = Intent(this,bioyear::class.java)
             startActivity(intent)
         }
         sto.setOnClickListener(){
