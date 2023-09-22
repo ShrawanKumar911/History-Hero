@@ -12,6 +12,7 @@ class help : AppCompatActivity() {
         setContentView(R.layout.activity_help)
 
         val home = findViewById<ImageView>(R.id.homel)
+        val feed = findViewById<ImageView>(R.id.feedbackl)
 
         val info = findViewById<TextView>(R.id.information)
         val fee = "1. This is app is for educational purpose.\n"+
@@ -25,6 +26,10 @@ class help : AppCompatActivity() {
         info.text = fee
         home.setOnClickListener(){
             val intent = Intent(this,Home::class.java)
+            startActivity(intent)
+        }
+        feed.setOnClickListener(){
+            val intent = Intent(this,feedback::class.java)
             startActivity(intent)
         }
     }
